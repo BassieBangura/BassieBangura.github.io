@@ -1,72 +1,12 @@
-.banner {
-    grid-area: banner;
-    background-color: $banner-bg;
-    padding: 0.2em 0.8em 0.2em 0.6em;
-    border-bottom: 1px solid #005b96;
-}
-
-.banner__container {
+header {
     margin: 0;
-    color: white;
-    font-size: 0.8em;
-    @include mq($xxs) {
-        font-size: 1em;
-    }
-   
-}
-
-.styleChrist {
-    color: #ddd;
-}
-
-.appName {
-    padding-top: 0.4em;
-}
-
-.notification-icon {
-    margin-left: auto;
-    margin-top: 0.3em;
-    width: 20px;
-    height: 20px;
-    transition: all .2s ease-in-out;
-    position: relative;
-}
-
-.notification-icon-path {
-    fill: #eee;
-}
-
-.notification-icon:hover { 
-    transform: scale(1.1); 
-
-}
-
-.notification-icon::after {
-    content: '';
-    position: absolute;
-    top: -3px;
-    left: 16px;
-    display: inline-block;
-    width: 7px;
-    height: 7px;
-    background-color:lightgreen;
-    border-radius: 50%;
-}
-
-.profilePicAndName {
-    margin-left: 0.5em;
-    padding-left: 0.5em;
-    border-left: 0.5px solid $nav-bg;
-}
-.profileName {
-    font-size: 0.7em;
-    position: relative;
-    bottom: 8px;
-    @include mq($xxs) {
-        font-size: 1em;
+    @include mq($md) {
+        margin-right: auto;
     }
 }
 
-
+.header__name {
+    margin: 0;
+}
 
 

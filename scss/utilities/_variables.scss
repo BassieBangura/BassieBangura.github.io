@@ -26,10 +26,11 @@ $container-font: Arial, sans-serif;
 
 
 //Breakpoint variables
-$xxs: 320px;
-$xs: 576px;
-$sm: 768px;
-$md: 1024px;
+$xs: 320px;
+$sm: 480px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
 
 //Border settings
 $border-settings: 1px solid $border-color;
