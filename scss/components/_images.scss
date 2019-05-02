@@ -1,0 +1,40 @@
+
+.img--avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+.profilePic {
+    width: 26px;
+    height: 26px;
+}
+
+.new-members__card__image {
+    width: 25%;
+    height: 35%;
+}
+
+.main-nav__icon {
+    width: 24px;
+    height: 24px;
+    @include mq($xxs) {
+        width: 32px;
+        height: 32px;
+    }
+ 
+}
+
+.st0{
+    fill: #888;
+}
+
+.bell-icon {
+    width: 20px;
+    height: 20px;
+}
+
+
+
+
+
