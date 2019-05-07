@@ -2,12 +2,14 @@
 .main-nav {
     @include mq($sm) {
             @include flexible($direction: row,
-                               $justify-content: flex-end);
+                               $justify-content: center);
         }
-    @include mq($lg) {
+    @include mq($md) {
         margin-left: auto;
+        justify-content: flex-end;
     }
     margin: 0;
+    width: 100%;
 }
 
 .main-nav.responsive {
@@ -32,7 +34,7 @@
 
 .header-nav-container .main-nav.responsive a {
     display: block;
-    text-align: left;
+    text-align: center;
 }
 
 .header-nav-container nav a.icon {
@@ -41,16 +43,18 @@
     }
 }
 
-/*nav a {
-
-    @include mq($sm) {
+.main-nav a.icon {
+    display: block;
+    @include centerer;
+  
+    /*@include mq($sm) {
         display: block;
         color: #f2f2f2;
         text-align: center;
         padding: 14px 16px;
         text-decoration: none;
         font-size: 17px;
-    }
+    }*/
 
-}*/
+}
 
