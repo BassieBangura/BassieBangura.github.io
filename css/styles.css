@@ -508,6 +508,70 @@ header {
   }
 }
 
+.jumbotron {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url("../images/jimage.jpg");
+  color: #fff;
+  position: relative;
+  /* Set a specific height */
+  min-height: 100vh;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.jumbotron__text {
+  max-width: 50%;
+}
+
+ul.skills__container {
+  list-style-type: disc;
+  padding: 1.5em;
+}
+
+/***.jumbotron:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(120, 122, 165, 0.4);
+} **/
+.jumbotron p {
+  text-align: left;
+  position: relative;
+  z-index: 1;
+}
+
+.parallax0,
+.parallax1,
+.parallax2,
+.parallax3 {
+  background-image: url("../images/section-image3.jpg");
+  /* Set a specific height */
+  min-height: 300px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.projects__card {
+  background-color: white;
+}
+
 /*********************************
          The Modal 
 **********************************/
