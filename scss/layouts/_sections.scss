@@ -26,7 +26,7 @@
 }
 
 ul.skills__container {
-  list-style-type: disc;
+  //list-style-type: disc;
   padding: 1.5em;
 }
 //overlay effect
@@ -159,7 +159,19 @@ hr {
   color: black;
 }
 
+/***************************************
+          CONTACTS
+*****************************************/
+.contacts {
+  @include centerer;
+}
 
+/****************************************
+            SKILLS
+*****************************************/
+.skills {
+  @include centerer;
+}
 /*********************************
          The Modal 
 **********************************/
