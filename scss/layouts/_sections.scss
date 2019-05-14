@@ -1,23 +1,6 @@
-.projects__list__wrapper {
-    display: grid;
-    grid-template-columns:minmax(0, 1fr);
-    grid-template-rows: minmax(0, auto);
-    grid-gap: 1.9em 1.9em;
-    padding: 0.5em 1em 1em 1em;
-    width: 98%;
-    margin: 0 auto 0 auto;
-
-    @include mq($md) {
-        grid-template-columns:minmax(0, 1fr) minmax(0, 1fr);
-        grid-template-rows: minmax(0, auto);   
-    }
-
-    @include mq($lg) {
-        grid-template-columns:minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
-        grid-template-rows: minmax(0, auto);   
-    }
-}
-
+/***************************************
+        JUMBOTRON SECTION
+****************************************/
 .jumbotron {
   @include flexible(
     $justify-content: flex-end,
@@ -38,7 +21,8 @@
 }
 
 .jumbotron__text {
-  max-width: 50%; 
+  max-width: 50%;
+  font-size: 3.5em; 
 }
 
 ul.skills__container {
@@ -78,9 +62,103 @@ ul.skills__container {
   background-size: cover;
 }
 
-.projects__card {
-  background-color: white;
+/***********************************
+          ABOUT SECTION
+************************************/
+.about {
+  text-align: center;
+  padding: 0 1.2em;
 }
+
+.about p {
+  text-align: left;
+}
+
+
+/********************************
+      PROJECTS SECTION
+*********************************/
+.projects__list__wrapper {
+  display: grid;
+  grid-template-columns:minmax(0, 1fr);
+  grid-template-rows: minmax(0, auto);
+  grid-gap: 3em 3em;
+  padding: 0.5em 1em 1em 1em;
+  width: 98%;
+  margin: 0 auto 0 auto;
+
+  @include mq($md) {
+      grid-template-columns:minmax(0, 1fr) minmax(0, 1fr);
+      grid-template-rows: minmax(0, auto);   
+  }
+
+  @include mq($lg) {
+      grid-template-columns:minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+      grid-template-rows: minmax(0, auto);   
+  }
+}
+.projects {
+  text-align: center;
+}
+
+hr {
+  width: 60%;
+  border-bottom: solid 0.005px #000;
+  margin: 0;
+}
+
+.bottom-hr {
+  width: 60%;
+  border-bottom: solid 0.005px #000;
+  margin-bottom: 0.9em;
+}
+
+.projects__card {
+  background-color: #fff;
+  @include flexible($direction: column,
+                    $align-items: center);
+  border: 0.1em solid #888;
+  border-radius: 1em;
+  overflow: hidden;
+  padding-bottom: 0.6em;
+}
+
+.projects__card:hover {
+  color: #333;
+  text-decoration: none;
+  box-shadow: 0 4px 8px 5px rgba(0, 0, 0, 0.4);
+  transform: scale(1.0005)
+  }
+
+  .projects__card__title {
+    margin: 0.8em auto;
+  }
+
+.projects__card__summary {
+  padding: 0 0.9em;
+
+}
+.projects__card__link-container {
+  width: 100%;
+  @include flexible($justify-content: space-around);
+  margin-top: auto;
+}
+
+.projects__card__link-container button {
+  border-radius: 0.25em;
+  padding: 0.45em 0.75em 0.45em 0.75em;
+  border: none;
+}
+
+.projects__card__link-container button:hover {
+  border: solid 1px #aaa;
+  color: white;
+}
+
+.projects__card__link-container button a:hover {
+  color: black;
+}
+
 
 /*********************************
          The Modal 

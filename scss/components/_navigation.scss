@@ -31,13 +31,9 @@ nav[role="navigation"] {
     width: 100%;
 }
 
-.nav__item:hover {
-    background-color: $nav-item-bg;
-    border-radius: 4px;
-
-    a {
+.main-nav__item:hover {
+    background-color: #4CAF50;
     color: white;
-    }
 }
 
 a:link {
@@ -47,4 +43,8 @@ a:link {
 .main-nav__icon{
     margin-left: 0.7em;
     margin-right: 0.7em;
+}
+
+.main-nav__item {
+    padding: 1em;
 }
