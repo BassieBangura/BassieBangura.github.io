@@ -37,6 +37,9 @@
       
       <section class="about">
         <h2>ABOUT</h2>
+        <div class="about__img__wrapper">
+          <img class="about__image" src="images/profile.gif"/>
+        </div>
         <p>
           My name is Bassie Bangura, orginally from Sierra Leone, West Africa and currently living in Winston-Salem, NC.
           I earned  a degree in Electronics Engineering immediately after which I gained interest in computer networking. 
@@ -58,93 +61,116 @@
         <!--Image by James Osborne from Pixabay -->
           <h2>PORTFOLIO</h2>
           <div class="projects__list__wrapper">
-              <article class="projects__card">
-                <img class="projects__card__image" alt="screenshot of project" src="images/projct1.png">
-                <h3 class="projects__card__title">Registration Form</h3>
-                <hr/>
-                <p class="projects__card__summary">
-                  This is a responsive mobile-friendly registration form, built using a wide variety of HTML form input types and attributes. 
-                  It was built with a "mobile-first" approach and desktop version using media queries.
-                </p>
-                <hr class="bottom-hr" />
-                <div class="projects__card__link-container">
-                  <button><a href="https://github.com/bassiebangura/Project_3_An_Online_Registration_Form" target="_blank">View On Github</a></button>
-                  <button><a href="https://bassiebangura.github.io/Project_3_An_Online_Registration_Form/" target="_blank">View Project</a></button>
+              <article class="projects__card even">
+                <div class="projects__card__wrapper">
+                  <div class="projects__card__text">
+                    <h3 class="projects__card__title">Registration Form</h3>
+                    <p class="projects__card__summary">
+                      This is a responsive mobile-friendly registration form, built using a wide variety of HTML form input types and attributes. 
+                      It was built with a "mobile-first" approach and desktop version using media queries.
+                    </p>
+                    <div class="projects__card__link-container">
+                      <button><a href="https://github.com/bassiebangura/Project_3_An_Online_Registration_Form" target="_blank">On GitHub</a></button>
+                      <button><a href="https://bassiebangura.github.io/Project_3_An_Online_Registration_Form/" target="_blank">View Project</a></button>
+                    </div>
+                  </div>
+                  <div class="img-container">
+                    <img class="projects__card__image" alt="screenshot of project" src="images/projct1.png">
+                  </div>
+                </div> 
+              </article>
+              <article class="projects__card odd">
+                <div class="projects__card__wrapper">
+                  <div class="projects__card__text">
+                    <h3 class="projects__card__title">Web Style Guide</h3>
+                    <p class="projects__card__summary">
+                      For this project, an index.html file with a set of class names already defined was provided. 
+                      Using SASS' partials, variables, extends, mixins and defined class names I applied styles
+                      to the Web Style Guide page . 
+                    </p>
+                    <div class="projects__card__link-container">
+                      <button><a href="https://github.com/bassiebangura/Project_4_A_Web_Style_Guide" target="_blank">On GitHub</a></button>
+                      <button><a href="https://bassiebangura.github.io/Project_4_A_Web_Style_Guide/" target="_blank">View Project</a></button>
+                    </div>
+                  </div>
+                  <div class="img-container">
+                    <img class="projects__card__image" alt="screenshot of project" src="images/projct2.png">
+                  </div>
                 </div>
               </article>
-              <article class="projects__card">
-                <img class="projects__card__image" alt="screenshot of project" src="images/projct2.png">
-                <h3 class="projects__card__title">Web Style Guide</h3>
-                <hr>
-                <p class="projects__card__summary">
-                  For this project, an index.html file with a set of class names already defined was provided. 
-                  Using SASS' partials, variables, extends, mixins and defined class names I applied styles
-                  to the Web Style Guide page . 
-                </p>
-                <hr class="bottom-hr" />
-                <div class="projects__card__link-container">
-                  <button><a href="https://github.com/bassiebangura/Project_4_A_Web_Style_Guide" target="_blank">View On Github</a></button>
-                  <button><a href="https://bassiebangura.github.io/Project_4_A_Web_Style_Guide/" target="_blank">View Project</a></button>
-                </div>
-
+              <article class="projects__card even">
+                <div class="projects__card__wrapper">
+                  <div class="projects__card__text">
+                    <h3 class="projects__card__title">Photo Gallery</h3>
+                    <p class="projects__card__summary">
+                      This interactive photo gallery was built using HTML5, CSS3, JavaScript and jQuery. 
+                      The search area allows photos to be filtered based on user input. 
+                      When the user clicks on a thumbnail, the photo will display in a lightbox. 
+                    </p>
+                    <div class="projects__card__link-container">
+                      <button><a href="https://github.com/bassiebangura/Project_5_Photo_Gallery" target="_blank">On GitHub</a></button>
+                      <button><a href="https://bassiebangura.github.io/Project_5_Photo_Gallery/" target="_blank">View Project</a></button>
+                    </div>
+                  </div>
+                  <div class="img-container">
+                    <img class="projects__card__image" alt="screenshot of project" src="images/projct3.png">
+                  </div>
+                </div>       
               </article>
-              <article class="projects__card">
-                <img class="projects__card__image" alt="screenshot of project" src="images/projct3.png">
-                <h3 class="projects__card__title">Photo Gallery</h3>
-                <hr>
-                <p class="projects__card__summary">
-                  This interactive photo gallery was built using HTML5, CSS3, JavaScript and jQuery. 
-                  The search area allows photos to be filtered based on user input. 
-                  When the user clicks on a thumbnail, the photo will display in a lightbox. 
-                </p>
-                <hr class="bottom-hr" />
-                <div class="projects__card__link-container">
-                  <button><a href="https://github.com/bassiebangura/Project_5_Photo_Gallery" target="_blank">View On Github</a></button>
-                  <button><a href="https://bassiebangura.github.io/Project_5_Photo_Gallery/" target="_blank">View Project</a></button>
-                </div>
-              </article>
-              <article class="projects__card">
-                <img class="projects__card__image" alt="screenshot of project" src="images/projct4.png">
-                <h3 class="projects__card__title">Game Show App</h3>
-                <hr>
-                <p class="projects__card__summary">
-                  The Game Show App is an interactive Application built using HTML5, CSS3 and a heavy use of
-                  JavaScript.
-                </p>
-                <hr class="bottom-hr">
-                <div class="projects__card__link-container">
-                  <button><a href="https://github.com/bassiebangura/Project_6_Game_Show_App" target="_blank">View On Github</a></button>
-                  <button><a href="https://bassiebangura.github.io/Project_6_Game_Show_App/" target="_blank">View Project</a></button>
+              <article class="projects__card odd">
+                <div class="projects__card__wrapper">
+                  <div class="projects__card__text">
+                    <h3 class="projects__card__title">Game Show App</h3>
+                    <p class="projects__card__summary">
+                      The Game Show App is an interactive Application built using HTML5, CSS3 and a heavy use of
+                      JavaScript.
+                    </p>
+                    <div class="projects__card__link-container">
+                      <button><a href="https://github.com/bassiebangura/Project_6_Game_Show_App" target="_blank">On GitHub</a></button>
+                      <button><a href="https://bassiebangura.github.io/Project_6_Game_Show_App/" target="_blank">View Project</a></button>
+                    </div>
+                  </div>
+                  <div class="img-container">
+                    <img class="projects__card__image" alt="screenshot of project" src="images/projct4.png">
+                  </div>
                 </div>
               </article>
-              <article class="projects__card">
-                <img class="projects__card__image" alt="screenshot of project" src="images/projct5.png">
-                <h3 class="projects__card__title">Dash Board App</h3>
-                <hr>
-                <p class="projects__card__summary">
-                  The Web dashboard was built with HTML, CSS and JavaScript-driven charts and graphs. 
-                  The graphs where implemented using the chart.js library and the interactivties using 
-                  JavaScript and CSS in some sections.
-                </p>
-                <hr class="bottom-hr" />
-                <div class="projects__card__link-container">
-                  <button><a href="https://github.com/bassiebangura/Project_7_WebApp_Dashboard_" target="_blank">View On Github</a></button>
-                  <button><a href="https://bassiebangura.github.io/Project_7_WebApp_Dashboard_/" target="_blank">View Project</a></button>
+              <article class="projects__card even">
+                <div class="projects__card__wrapper">
+                  <div class="projects__card__text">
+                    <h3 class="projects__card__title">Dash Board App</h3>
+                    <p class="projects__card__summary">
+                      The Web dashboard was built with HTML, CSS and JavaScript-driven charts and graphs. 
+                      The graphs where implemented using the chart.js library and the interactivties using 
+                      JavaScript and CSS in some sections.
+                    </p>
+                    <div class="projects__card__link-container">
+                      <button><a href="https://github.com/bassiebangura/Project_7_WebApp_Dashboard_" target="_blank">On GitHub</a></button>
+                      <button><a href="https://bassiebangura.github.io/Project_7_WebApp_Dashboard_/" target="_blank">View Project</a></button>
+                    </div>
+                  </div>
+                  <div class="img-container">
+                    <img class="projects__card__image" alt="screenshot of project" src="images/projct5.png"> 
+                  </div>
                 </div>
-              </article>
-              <article class="projects__card">
-                <img class="projects__card__image" alt="screenshot of project" src="images/projct6b.png">
-                <h3 class="projects__card__title">Online Employee Directory</h3>
-                <hr>
-                <p class="projects__card__summary">
-                  In this project, I used the Random User Generator API
-                  to fetch data for 12 random “employees" by requesting a JSON object from the API using fetch and 
-                  parsing the data. The 12 employees were then listed in a grid.
-                </p>
-                <hr class="bottom-hr" />
-                <div class="projects__card__link-container">
-                  <button><a href="https://github.com/bassiebangura/Project_8_Use_an_API_to_create_Employee_Directory" target="_blank">View On Github</a></button>
-                  <button><a href="https://bassiebangura.github.io/Project_8_Use_an_API_to_create_Employee_Directory/" target="_blank">View Project</a></button>
+                </article>
+              <article class="projects__card odd">
+                <div class="projects__card__wrapper">
+                  <div class="projects__card__text">
+                    <h3 class="projects__card__title">Online Employee Directory</h3>
+                    <p class="projects__card__summary">
+                      In this project, I used the Random User Generator API
+                      to fetch data for 12 random “employees" by requesting a JSON object from the API using fetch and 
+                      parsing the data. The 12 employees were then listed in a grid.
+                    </p>
+                    <div class="projects__card__link-container">
+                      <button><a href="https://github.com/bassiebangura/Project_8_Use_an_API_to_create_Employee_Directory" target="_blank">On GitHub</a></button>
+                      <button><a href="https://bassiebangura.github.io/Project_8_Use_an_API_to_create_Employee_Directory/" target="_blank">View Project</a></button>
+                    </div>
+                  </div>
+                  <div class="img-container">
+                    <img class="projects__card__image" alt="screenshot of project" src="images/projct6b.png">
+                  </div>
                 </div>
               </article>
           </div>    
