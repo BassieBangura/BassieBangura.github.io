@@ -121,28 +121,13 @@ ul.skills__container {
 /********************************
       PROJECTS SECTION
 *********************************/
-/*.projects__list__wrapper {
-  display: grid;
-  grid-template-columns:minmax(0, 1fr);
-  grid-template-rows: minmax(0, auto);
-  grid-gap: 3em 3em;
-  padding: 0.5em 1em 1em 1em;
-  width: 98%;
-  margin: 0 auto 0 auto;
 
-  @include mq($md) {
-      grid-template-columns:minmax(0, 1fr) minmax(0, 1fr);
-      grid-template-rows: minmax(0, auto);   
-  }
-
-  @include mq($lg) {
-      grid-template-columns:minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
-      grid-template-rows: minmax(0, auto);   
-  }
-} */
 .projects {
   text-align: center;
   //background-image: url("../images/blue-bg.png")
+  h2 {
+    color: #043E62;
+  }
 }
 
 .projects__card {
@@ -154,16 +139,20 @@ ul.skills__container {
 }
 .projects__card__wrapper {
   width: 95%;
+  padding: 1.5em 0.1em;
   @include mq($md) {
     @include flexible($direction: row);
   }
 }
 .odd {
-  color: #043E62;
-}
-.even {
   background-image: url("../images/blue-bg.png");
   color: white;
+  @include mq($md) {
+    flex-direction: row-reverse;
+  } 
+}
+.even {
+  color: #043E62;
 }
 
 .projects__card__text {
@@ -217,9 +206,37 @@ ul.skills__container {
 /***************************************
           CONTACTS
 *****************************************/
-.contacts {
+.contact {
   @include centerer;
 }
+
+.contact__email {
+  @include centerer;
+}
+
+/*********************************
+        FOOTER
+**********************************/
+footer {
+  background-color: #73B5F2;
+}
+.social__media {
+  @include centerer;
+}
+.footer__content {
+  font-size: 1.2em;
+  @include flexible($justify-content: center);
+  @include centerer;
+
+  i {
+    color: blue;
+    padding: 0.5em 0.8em;
+  }
+}
+
+
+
+
 
 /****************************************
             SKILLS
