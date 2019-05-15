@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.0/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   </head>
   <body id="container-section" class="container">
@@ -14,11 +15,11 @@
         <h1 class="header__name"><span>Bassie Bangura</span></h1>
       </header>
       <nav class="main-nav" id="main-nav-content">
-        <a class="main-nav__content__home active main-nav__item">HOME</a>
-        <a class="main-nav__content__about main-nav__item">ABOUT</a>
-        <a class="main-nav__content__projects main-nav__item">PORTFOLIO</a>
-        <a class="main-nav__content__skills main-nav__item">SKILLS</a>
-        <a class="main-nav__content__contact main-nav__item">CONTACT</a>
+        <a class="main-nav__content__home active main-nav__item" href="#header-nav-wrapper">HOME</a>
+        <a class="main-nav__content__about main-nav__item" href="#about-section">ABOUT</a>
+        <a class="main-nav__content__projects main-nav__item" href="#portfolio">PORTFOLIO</a>
+        <a class="main-nav__content__skills main-nav__item" href="#skills-section">SKILLS</a>
+        <a class="main-nav__content__contact main-nav__item" href="#contact-section">CONTACT</a>
         <a href="#" class="icon">
           <i class="fa fa-bars"></i>
         </a>
@@ -35,7 +36,7 @@
         </div>
       </div>
       
-      <section class="about">
+      <section class="about" id="about-section">
         <h2>ABOUT</h2>
         <div class="about__img__wrapper">
           <img class="about__image" src="images/profile.gif"/>
@@ -57,7 +58,7 @@
         </p>
       </section>
       <!-- <div class="parallax1"></div> -->
-      <section class="projects">
+      <section class="projects" id="portfolio">
         <!--Image by James Osborne from Pixabay -->
           <h2 class="projects__heading">PORTFOLIO</h2>
           <div class="projects__list__wrapper">
@@ -176,7 +177,7 @@
           </div>    
       </section>
       <!-- <div class="parallax2"></div> -->
-      <section class="skills">
+      <section class="skills" id="skills-section">
         <h2>SKILLS</h2>
         <ul class="skills__container">
           <li class="skills__item">
@@ -214,7 +215,7 @@
         </ul>    
       </section>
       <!-- <div class="parallax3"></div> -->
-      <section class="contact">
+      <section class="contact" id="contact-section">
           <h2>CONTACT</h2>
           <p>
             Interested in hiring me and need more information.

@@ -481,6 +481,7 @@ header {
   margin: 0;
   padding: 0.1em;
   color: #0D6599;
+  font-family: 'Orbitron', sans-serif;
 }
 
 /***************************************
@@ -606,7 +607,13 @@ ul.skills__container {
 ************************************/
 .about {
   text-align: center;
-  padding: 0 1.2em;
+  padding: 1.5em 1.8em;
+  color: #043E62;
+  background-color: #73B5F2;
+}
+
+.about h2 {
+  margin-top: 0;
 }
 
 .about p {
@@ -946,7 +953,7 @@ nav[role="navigation"] {
   color: white;
 }
 
-a:link {
+a {
   text-decoration: none;
 }
 

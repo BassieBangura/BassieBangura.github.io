@@ -110,7 +110,13 @@ ul.skills__container {
 ************************************/
 .about {
   text-align: center;
-  padding: 0 1.2em;
+  padding: 1.5em 1.8em;
+  color: #043E62;
+  background-color: #73B5F2;
+
+  h2 {
+    margin-top: 0;
+  }
 }
 
 .about p {
