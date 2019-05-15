@@ -485,17 +485,22 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   background-image: url("../images/jimage.jpg");
   color: #fff;
   position: relative;
   /* Set a specific height */
   min-height: 100vh;
+  width: 100%;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
@@ -503,13 +508,64 @@ header {
   background-size: cover;
 }
 
-.jumbotron__text {
-  max-width: 50%;
+.jumbotron__text__container {
+  max-width: 100%;
+  padding: 1em;
+}
+
+.jumbotron__name {
   font-size: 3.5em;
+  font-weight: bolder;
+}
+
+.jumbotron__title {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.jumbotron__name,
+.jumbotron__title {
+  width: 100%;
 }
 
 ul.skills__container {
   padding: 1.5em;
+}
+
+.skills__container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: space-around;
+      -ms-flex-align: space-around;
+          align-items: space-around;
+  margin: auto;
+  text-align: center;
+  padding: 6em;
+  width: 65%;
+}
+
+.skills__container li {
+  padding: 3em;
+}
+
+.skills i {
+  font-size: 2.5rem;
+  color: white;
+  width: 4.45rem;
+  line-height: 4.5rem;
+  height: 4.45rem;
+}
+
+.skills i, .skills img {
+  background-color: blue;
+  border-radius: 50%;
 }
 
 /***.jumbotron:before {
@@ -817,6 +873,10 @@ hr {
   display: inline-block;
 }
 
+.fab {
+  display: inline-block;
+}
+
 nav[role="navigation"] {
   width: 100%;
 }
@@ -854,6 +914,10 @@ a:link {
   width: 100%;
   max-height: 250px;
   border-bottom: 1px solid #888;
+}
+
+.skills__container img {
+  width: 4.45em;
 }
 
 .form__label--hidden {

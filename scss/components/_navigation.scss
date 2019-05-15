@@ -1,5 +1,7 @@
 //******* Navigation ********
-
+.fab {
+    display: inline-block;
+}
 nav[role="navigation"] {
     width: 100%;
 }
@@ -24,3 +26,4 @@ a:link {
 .main-nav__item {
     padding: 1em 1.2em;
 }
+

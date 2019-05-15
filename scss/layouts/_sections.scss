@@ -3,14 +3,16 @@
 ****************************************/
 .jumbotron {
   @include flexible(
-    $justify-content: flex-end,
-    $align-items: center
+    $justify-content: center,
+    $align-items: flex-end,
+    $direction: column
   );
   background-image: url("../images/jimage.jpg");
   color: #fff;
   position: relative;
   /* Set a specific height */
   min-height: 100vh; 
+  width: 100%;
   
 
   /* Create the parallax scrolling effect */
@@ -20,15 +22,57 @@
   background-size: cover;
 }
 
-.jumbotron__text {
-  max-width: 50%;
-  font-size: 3.5em; 
+.jumbotron__text__container {
+  max-width: 100%;
+  padding: 1em;
+}
+
+.jumbotron__name {
+  font-size: 3.5em;
+  font-weight: bolder;
+}
+
+.jumbotron__title {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.jumbotron__name,
+.jumbotron__title {
+  width: 100%;
 }
 
 ul.skills__container {
-  //list-style-type: disc;
   padding: 1.5em;
 }
+
+.skills__container {
+  width: 100%;
+  @include flexible($justify-content: center,
+                      $align-items: space-around,
+                      $wrap: wrap);
+  @include centerer;
+  padding: 6em;
+  width: 65%;
+}
+
+.skills__container li {
+  padding: 3em;
+}
+
+.skills i {
+  font-size: 2.5rem;
+  color: white;
+  width: 4.45rem;
+  line-height: 4.5rem;
+  height: 4.45rem;
+}
+
+.skills i, .skills img {
+  background-color: blue;
+  border-radius: 50%;
+}
+
 //overlay effect
 /***.jumbotron:before {
   content: '';
