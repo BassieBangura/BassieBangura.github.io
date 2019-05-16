@@ -1,6 +1,6 @@
 /***       Header-Nav-Container Layout  ****/
 .header-nav-container {
-    background-color: #bbb;
+    border-bottom: 1px solid #0D6599;
     width: 100%;
     @include flexible($direction: column,
                         $justify-content: center,
@@ -15,13 +15,11 @@
 .active {
     background-color: #0D6599;
     color: white;
-    border-bottom: 1px solid #888;
   }
 
 body {
+    font-family: 'Roboto', sans-serif;
     color: #333;
 }
-
-
  
 

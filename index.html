@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.0/css/all.css">
     <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   </head>
   <body id="container-section" class="container">
@@ -20,7 +21,7 @@
         <a class="main-nav__content__projects main-nav__item" href="#portfolio">PORTFOLIO</a>
         <a class="main-nav__content__skills main-nav__item" href="#skills-section">SKILLS</a>
         <a class="main-nav__content__contact main-nav__item" href="#contact-section">CONTACT</a>
-        <a href="#" class="icon">
+        <a href="#" class="icon" id="hamburger-icon">
           <i class="fa fa-bars"></i>
         </a>
       </nav>
@@ -37,14 +38,16 @@
       </div>
       
       <section class="about" id="about-section">
-        <h2>ABOUT</h2>
+        <h2>ABOUT ME</h2>
         <div class="about__img__wrapper">
           <img class="about__image" src="images/profile.gif"/>
         </div>
-        <p>
+        <p class="about__text">
           My name is Bassie Bangura, orginally from Sierra Leone, West Africa and currently living in Winston-Salem, NC.
           I earned  a degree in Electronics Engineering immediately after which I gained interest in computer networking. 
-          A year into computer networking i found it boring and started learning web development on EDX. Last year (2018) i quit 
+          A year into computer networking i found it boring and started learning web development on EDX. 
+          <br><br>
+          Last year (2018) i quit 
           my job as a Middle School Science teacher to be a stay at home dad and focus on front-end web development. I am 
           a life-long learner and I believe everyday is opportunity to get better at what you love doing (for me is learning javascript). 
         <br><br>
@@ -63,8 +66,8 @@
           <h2 class="projects__heading">PORTFOLIO</h2>
           <div class="projects__list__wrapper">
               <article class="projects__card">
-                <div class="projects__card__wrapper even">
-                  <div class="projects__card__text">
+                <div class="projects__card__wrapper even first">
+                  <div class="projects__card__text first">
                     <h3 class="projects__card__title">Registration Form</h3>
                     <p class="projects__card__summary">
                       This is a responsive mobile-friendly registration form, built using a wide variety of HTML form input types and attributes. 
@@ -216,29 +219,20 @@
       </section>
       <!-- <div class="parallax3"></div> -->
       <section class="contact" id="contact-section">
-          <h2>CONTACT</h2>
+        <div class="contact-wrapper">
+          <h2 class="contact__heading">CONTACT</h2>
           <p>
-            Interested in hiring me and need more information.
+            Interested in hiring me? For more information email me or connect with me through social media.
           </p>
-          <button class="contact__email"><a href="mailto:devbassiebangura@gmail.com">EMAIL ME</a></butto>
+          <button class="contact__email"><a href="mailto:devbassiebangura@gmail.com">EMAIL ME</a></button>
+          <ul class="social-media">
+            <li><a href="https://www.linkedin.com/in/bassiebangura/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+            <li><a href="https://github.com/bassiebangura" target="_blank"><i class="fab fa-github"></i></a></li>
+            <li><a href=""><i class="fab fa-twitter"></i></a></li>
+          </ul>
+        </div>
       </section>
     </main>
-    <footer>
-      <p class="social__media">Social Media</p>
-      <ul class="footer__content">
-        <li><a href="https://www.linkedin.com/in/bassiebangura/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-        <li><a href="https://github.com/bassiebangura" target="_blank"><i class="fab fa-github"></i></a></li>
-        <li><a href=""><i class="fab fa-twitter"></i></a></li>
-      </ul>
-    </footer>
-    <!---   THE MODAL   -->
-    <div id="myModal" class="modal"><!--Begin-->
-      <!-- Modal content -->
-      <div class="modal-content-container centered">
-        <span class="close">&times;</span>
-        <!-- Add item with Javascript-->
-      </div> -->
-    </div><!--End-->
     <script src="js/main.js"></script>
   </body>
 </html>

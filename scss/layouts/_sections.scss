@@ -46,6 +46,30 @@
   width: 100%;
 }
 
+/***********************************
+          ABOUT SECTION
+************************************/
+.about {
+  text-align: center;
+  padding: 1.5em 1.8em;
+  color: #043E62;
+  background-color: #73B5F2;
+
+  h2 {
+    margin-top: 0;
+  }
+}
+
+.about p {
+  text-align: left;
+}
+
+.about__text {
+  padding: 0 1.2em;
+}
+/**********************
+      SKILLS
+***********************/
 ul.skills__container {
   padding: 1.5em;
 }
@@ -73,20 +97,10 @@ ul.skills__container {
 }
 
 .skills i, .skills img {
-  background-color: blue;
+  background-color:  #3385C6;
   border-radius: 50%;
 }
 
-//overlay effect
-/***.jumbotron:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  background: rgba(120, 122, 165, 0.4);
-} **/
 
 
 .parallax0,
@@ -105,24 +119,6 @@ ul.skills__container {
   background-size: cover;
 }
 
-/***********************************
-          ABOUT SECTION
-************************************/
-.about {
-  text-align: center;
-  padding: 1.5em 1.8em;
-  color: #043E62;
-  background-color: #73B5F2;
-
-  h2 {
-    margin-top: 0;
-  }
-}
-
-.about p {
-  text-align: left;
-}
-
 
 /********************************
       PROJECTS SECTION
@@ -134,6 +130,16 @@ ul.skills__container {
   h2 {
     color: #043E62;
   }
+}
+
+.projects__heading {
+  margin-bottom: 0;
+  margin-top: 1.5em;
+  padding-bottom: 0.5em;
+  padding-top: 0.5em;
+  border-bottom: 1px solid #043E62;
+  width: 40%;
+  @include centerer;
 }
 
 .projects__card {
@@ -166,6 +172,13 @@ ul.skills__container {
   @include mq($md) {
     width: 50%;
     text-align: left;
+  }
+}
+
+div.first {
+  padding-top:0;
+  @include mq($md) {
+    padding-top: 1.5em;
   }
 }
 
@@ -209,27 +222,43 @@ ul.skills__container {
   color: #0F263D;
 }
 
-/***************************************
-          CONTACTS
+/****************************************
+            SKILLS
 *****************************************/
-.contact {
+.skills {
+  color: #043E62;
   @include centerer;
 }
 
+/***************************************
+          CONTACT
+*****************************************/
+.contact {
+  @include centerer;
+  background-color: #3385C6;
+  color: #043E62;
+ 
+  
+}
+
+.contact-wrapper {
+  width: 60%;
+  @include centerer;
+}
+.contact__heading {
+  margin: 0;
+  padding: 0.7em;
+  padding-bottom: 0;
+}
+.social-media {
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
+}
 .contact__email {
   @include centerer;
 }
 
-/*********************************
-        FOOTER
-**********************************/
-footer {
-  background-color: #73B5F2;
-}
-.social__media {
-  @include centerer;
-}
-.footer__content {
+.social-media {
   font-size: 1.2em;
   @include flexible($justify-content: center);
   @include centerer;
@@ -240,16 +269,6 @@ footer {
   }
 }
 
-
-
-
-
-/****************************************
-            SKILLS
-*****************************************/
-.skills {
-  @include centerer;
-}
 /*********************************
          The Modal 
 **********************************/

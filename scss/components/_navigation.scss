@@ -2,6 +2,13 @@
 .fab {
     display: inline-block;
 }
+
+#hamburger-icon {
+    font-size: 1.5em;
+    @include mq($sm) {
+        display: none;
+    }
+}   
 nav[role="navigation"] {
     width: 100%;
 }
@@ -11,13 +18,14 @@ nav[role="navigation"] {
     color: white;
 }
 
-a {
+a:link {
     text-decoration: none;
 }
 
-.main__nav {
-    padding: 0.5em;
-}
+/*.main-nav {
+    @include flexible($justify-content: space-between);
+    width: 100%;
+}*/
 .main-nav__icon{
     margin-left: 0.7em;
     margin-right: 0.7em;

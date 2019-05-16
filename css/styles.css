@@ -419,7 +419,7 @@ ul {
 
 /***       Header-Nav-Container Layout  ****/
 .header-nav-container {
-  background-color: #bbb;
+  border-bottom: 1px solid #0D6599;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -457,10 +457,10 @@ ul {
 .active {
   background-color: #0D6599;
   color: white;
-  border-bottom: 1px solid #888;
 }
 
 body {
+  font-family: 'Roboto', sans-serif;
   color: #333;
 }
 
@@ -539,6 +539,31 @@ header {
   width: 100%;
 }
 
+/***********************************
+          ABOUT SECTION
+************************************/
+.about {
+  text-align: center;
+  padding: 1.5em 1.8em;
+  color: #043E62;
+  background-color: #73B5F2;
+}
+
+.about h2 {
+  margin-top: 0;
+}
+
+.about p {
+  text-align: left;
+}
+
+.about__text {
+  padding: 0 1.2em;
+}
+
+/**********************
+      SKILLS
+***********************/
 ul.skills__container {
   padding: 1.5em;
 }
@@ -575,19 +600,10 @@ ul.skills__container {
 }
 
 .skills i, .skills img {
-  background-color: blue;
+  background-color: #3385C6;
   border-radius: 50%;
 }
 
-/***.jumbotron:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  background: rgba(120, 122, 165, 0.4);
-} **/
 .parallax0,
 .parallax1,
 .parallax2,
@@ -602,24 +618,6 @@ ul.skills__container {
   background-size: cover;
 }
 
-/***********************************
-          ABOUT SECTION
-************************************/
-.about {
-  text-align: center;
-  padding: 1.5em 1.8em;
-  color: #043E62;
-  background-color: #73B5F2;
-}
-
-.about h2 {
-  margin-top: 0;
-}
-
-.about p {
-  text-align: left;
-}
-
 /********************************
       PROJECTS SECTION
 *********************************/
@@ -629,6 +627,17 @@ ul.skills__container {
 
 .projects h2 {
   color: #043E62;
+}
+
+.projects__heading {
+  margin-bottom: 0;
+  margin-top: 1.5em;
+  padding-bottom: 0.5em;
+  padding-top: 0.5em;
+  border-bottom: 1px solid #043E62;
+  width: 40%;
+  margin: auto;
+  text-align: center;
 }
 
 .projects__card {
@@ -702,6 +711,16 @@ ul.skills__container {
   }
 }
 
+div.first {
+  padding-top: 0;
+}
+
+@media (min-width: 768px) {
+  div.first {
+    padding-top: 1.5em;
+  }
+}
+
 .projects__card__summary {
   padding-bottom: 0.8em;
 }
@@ -754,12 +773,40 @@ ul.skills__container {
   color: #0F263D;
 }
 
+/****************************************
+            SKILLS
+*****************************************/
+.skills {
+  color: #043E62;
+  margin: auto;
+  text-align: center;
+}
+
 /***************************************
-          CONTACTS
+          CONTACT
 *****************************************/
 .contact {
   margin: auto;
   text-align: center;
+  background-color: #3385C6;
+  color: #043E62;
+}
+
+.contact-wrapper {
+  width: 60%;
+  margin: auto;
+  text-align: center;
+}
+
+.contact__heading {
+  margin: 0;
+  padding: 0.7em;
+  padding-bottom: 0;
+}
+
+.social-media {
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
 }
 
 .contact__email {
@@ -767,19 +814,7 @@ ul.skills__container {
   text-align: center;
 }
 
-/*********************************
-        FOOTER
-**********************************/
-footer {
-  background-color: #73B5F2;
-}
-
-.social__media {
-  margin: auto;
-  text-align: center;
-}
-
-.footer__content {
+.social-media {
   font-size: 1.2em;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -794,17 +829,9 @@ footer {
   text-align: center;
 }
 
-.footer__content i {
+.social-media i {
   color: blue;
   padding: 0.5em 0.8em;
-}
-
-/****************************************
-            SKILLS
-*****************************************/
-.skills {
-  margin: auto;
-  text-align: center;
 }
 
 /*********************************
@@ -944,6 +971,16 @@ footer {
   display: inline-block;
 }
 
+#hamburger-icon {
+  font-size: 1.5em;
+}
+
+@media (min-width: 480px) {
+  #hamburger-icon {
+    display: none;
+  }
+}
+
 nav[role="navigation"] {
   width: 100%;
 }
@@ -953,14 +990,14 @@ nav[role="navigation"] {
   color: white;
 }
 
-a {
+a:link {
   text-decoration: none;
 }
 
-.main__nav {
-  padding: 0.5em;
-}
-
+/*.main-nav {
+    @include flexible($justify-content: space-between);
+    width: 100%;
+}*/
 .main-nav__icon {
   margin-left: 0.7em;
   margin-right: 0.7em;
@@ -1002,6 +1039,16 @@ a {
 
 .skills__container img {
   width: 4.45em;
+}
+
+.contact__email {
+  border-radius: 4px;
+  padding: 0.5em;
+  border: none;
+}
+
+.contact__email:hover {
+  border: 1px solid #043E6C;
 }
 
 .form__label--hidden {

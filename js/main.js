@@ -2,7 +2,8 @@
 /***********************************************
                 HAMBURGER MENU
 ************************************************/
-const navItem = document.getElementById("main-nav-content")
+const navItem = document.getElementById("main-nav-content");
+const hamburgerIcon = document.getElementById("hamburger-icon");
 let menuToggle = () => {
     //class determines position of hamburger menu icon
     if (navItem.className === "main-nav") {
@@ -12,7 +13,7 @@ let menuToggle = () => {
       }
 };
 
-navItem.addEventListener("click", () => {
+hamburgerIcon.addEventListener("click", () => {
     console.log("hello")
     menuToggle()
     return false;
@@ -20,7 +21,7 @@ navItem.addEventListener("click", () => {
 
 /**************************************************
               MODAL POPUP WINDOW
-*************************************************/
+*************************************************
 // Get the modal
 const modal = document.getElementById('myModal');
 const modalContentContainer = document.querySelector(".modal-content-container");
@@ -70,4 +71,4 @@ modalCloser.addEventListener('click', () => {
  }
           
 //console.log(employeeCardElementId);
-//console.log(e.currentTarget)
+//console.log(e.currentTarget) **/
