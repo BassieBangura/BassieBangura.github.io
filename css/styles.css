@@ -419,6 +419,8 @@ ul {
 
 /***       Header-Nav-Container Layout  ****/
 .header-nav-container {
+  position: fixed;
+  z-index: 2;
   border-bottom: 1px solid #0D6599;
   width: 100%;
   display: -webkit-box;
@@ -462,6 +464,7 @@ ul {
 body {
   font-family: 'Roboto', sans-serif;
   color: #333;
+  scroll-behavior: smooth;
 }
 
 header {
@@ -553,8 +556,39 @@ header {
   margin-top: 0;
 }
 
+@media (min-width: 768px) {
+  .about__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+@media (min-width: 768px) {
+  .about__img__wrapper {
+    width: 30%;
+  }
+}
+
+@media (min-width: 768px) {
+  .aobut__text__wrapper {
+    width: 65%;
+  }
+}
+
 .about p {
   text-align: left;
+  line-height: 1.8em;
 }
 
 .about__text {

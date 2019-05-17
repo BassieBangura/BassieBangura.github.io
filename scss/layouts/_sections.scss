@@ -60,8 +60,26 @@
   }
 }
 
+.about__wrapper {
+  @include mq($md) {
+    @include flexible($direction: row)
+  }
+}
+
+.about__img__wrapper {
+  @include mq($md) {
+    width: 30%;
+  }
+}
+
+.aobut__text__wrapper {
+  @include mq($md) {
+    width: 65%;
+  }
+}
 .about p {
   text-align: left;
+  line-height: 1.8em;
 }
 
 .about__text {

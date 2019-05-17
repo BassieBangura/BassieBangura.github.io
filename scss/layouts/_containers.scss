@@ -1,5 +1,7 @@
 /***       Header-Nav-Container Layout  ****/
 .header-nav-container {
+    position: fixed;
+    z-index: 2;
     border-bottom: 1px solid #0D6599;
     width: 100%;
     @include flexible($direction: column,
@@ -20,6 +22,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     color: #333;
+    scroll-behavior: smooth;
 }
  
 
