@@ -38,13 +38,15 @@ let headerNavContainer = document.querySelector(".header-nav-container")
 
 window.addEventListener("scroll", event => {
   let fromTop = window.scrollY;
+  let headerNavContainer = document.querySelector(".header-nav-container")
+  let headerOffHeight = headerNavContainer.offsetHeight;
   console.log("the page has been scrolled")
   console.log(mainNavLinks);
   mainNavLinks.forEach(link => {
     let section = document.querySelector(link.hash);
 
     if (
-      section.offsetTop <= fromTop &&
+      section.offsetTop - headerOffHeight <= fromTop &&
       section.offsetTop + section.offsetHeight > fromTop
     ) {
       link.classList.add("active");

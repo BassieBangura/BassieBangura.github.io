@@ -3,11 +3,12 @@
 ****************************************/
 .jumbotron {
   @include flexible(
-    $justify-content: center,
-    $align-items: center,
-    $direction: column
+    $direction: row,
+    $justify-content: flex-start,
+    $align-items: flex-start
+   
   );
-  background-image: url("../images/jimage1.jpg");
+  background-image: url("../images/jimage2.jpg");
   color: #fff;
   position: relative;
   /* Set a specific height */
@@ -23,22 +24,33 @@
 }
 
 .jumbotron__text__container {
-  width: 100%;
-  padding: 1em;
-  background-color: rgba(0, 0, 0, 0.75);
-  @include centerer;
+  padding: 0.1em;
+  padding-left: 0.5em;
+  border-radius: 4px;
+  background-color: rgba(13,1,75, 0.5);
+  margin-top: auto;
+  margin-bottom: auto;
+  font-family: 'Orbitron', Sans-serif;
+  
+  .jumbotron__name {
+    font-size: 1.8em;
+    text-align: center;
+    font-weight: bolder;
+    margin-bottom: 0;
+  }
+
+  @include mq($sm) {
+    background-color: rgba(13, 1, 75, 0.15);
+  }
 }
 
-.jumbotron__name {
-  font-size: 3.5em;
-  font-weight: bolder;
-  text-align: center;
-}
+
 
 .jumbotron__title {
-  font-size: 1.5em;
-  font-weight: bold;
+  font-size: 1.1em;
   text-align: center;
+  margin-top: 0.05em;
+  font-weight: bold;
 }
 
 .jumbotron__name,
@@ -144,7 +156,6 @@ ul.skills__container {
 
 .projects {
   text-align: center;
-  //background-image: url("../images/blue-bg.png")
   h2 {
     color: #043E62;
   }
@@ -267,8 +278,8 @@ div.first {
   padding: 1em;
   @include centerer;
   margin-top: 1em;
-  border-radius: 3px;
-  background-color:  rgba(20, 20, 20, 0.9);
+  border-radius: 6px;
+  background-color:  rgba(0, 0, 25, 0.9);
 }
 .contact__heading {
   margin: 0;

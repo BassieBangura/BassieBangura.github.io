@@ -471,6 +471,13 @@ body {
   scroll-behavior: smooth;
 }
 
+@media (min-width: 992px) {
+  main {
+    max-width: 1024px;
+    margin: auto;
+  }
+}
+
 header {
   margin: 0;
   width: 100%;
@@ -491,6 +498,12 @@ header {
   font-family: 'Orbitron', sans-serif;
 }
 
+.logo {
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 0.1em;
+}
+
 /***************************************
         JUMBOTRON SECTION
 ****************************************/
@@ -498,17 +511,17 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-image: url("../images/jimage1.jpg");
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  background-image: url("../images/jimage2.jpg");
   color: #fff;
   position: relative;
   /* Set a specific height */
@@ -522,23 +535,33 @@ header {
 }
 
 .jumbotron__text__container {
-  width: 100%;
-  padding: 1em;
-  background-color: rgba(0, 0, 0, 0.75);
-  margin: auto;
-  text-align: center;
+  padding: 0.1em;
+  padding-left: 0.5em;
+  border-radius: 4px;
+  background-color: rgba(13, 1, 75, 0.5);
+  margin-top: auto;
+  margin-bottom: auto;
+  font-family: 'Orbitron', Sans-serif;
 }
 
-.jumbotron__name {
-  font-size: 3.5em;
-  font-weight: bolder;
+.jumbotron__text__container .jumbotron__name {
+  font-size: 1.8em;
   text-align: center;
+  font-weight: bolder;
+  margin-bottom: 0;
+}
+
+@media (min-width: 480px) {
+  .jumbotron__text__container {
+    background-color: rgba(13, 1, 75, 0.15);
+  }
 }
 
 .jumbotron__title {
-  font-size: 1.5em;
-  font-weight: bold;
+  font-size: 1.1em;
   text-align: center;
+  margin-top: 0.05em;
+  font-weight: bold;
 }
 
 .jumbotron__name,
@@ -839,8 +862,8 @@ div.first {
   margin: auto;
   text-align: center;
   margin-top: 1em;
-  border-radius: 3px;
-  background-color: rgba(20, 20, 20, 0.9);
+  border-radius: 6px;
+  background-color: rgba(0, 0, 25, 0.9);
 }
 
 .contact__heading {
