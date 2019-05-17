@@ -24,9 +24,8 @@ hamburgerIcon.addEventListener("click", () => {
  ************************************************************/
 let mainNavLinks = document.querySelectorAll("nav a");
 let mainSections = document.querySelectorAll("main section");
+let headerNavContainer = document.querySelector(".header-nav-container")
 
-let lastId;
-let cur = [];
 
 // This should probably be throttled.
 // Especially because it triggers during smooth scrolling.
@@ -49,6 +48,7 @@ window.addEventListener("scroll", event => {
       section.offsetTop + section.offsetHeight > fromTop
     ) {
       link.classList.add("active");
+      headerNavContainer.classList.add("bottom-shadow");
     } else {
       link.classList.remove("active");
     }
