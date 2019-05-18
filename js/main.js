@@ -4,12 +4,16 @@
 ************************************************/
 const navItem = document.getElementById("main-nav-content");
 const hamburgerIcon = document.getElementById("hamburger-icon");
+const headerNavContainerForHamburgerMenuUse = document.querySelector('#header-nav-wrapper')
 let menuToggle = () => {
     //class determines position of hamburger menu icon
     if (navItem.className === "main-nav") {
         navItem.className += " responsive";
+        headerNavContainer.className += " display-column"
+
       } else {
         navItem.className = "main-nav";
+        headerNavContainer.className = "header-nav-container"
       }
 };
 

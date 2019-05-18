@@ -1,8 +1,4 @@
 /*** Flex layout for main-nav content ***/
-.header-nav-container {
-    background-color: #73B5F2;
-    color: #0D6599;
-}
 .main-nav {
     @include mq($sm) {
             @include flexible($direction: row,
@@ -50,7 +46,7 @@
 
 .main-nav a.icon {
     display: block;
-    @include centerer;
+    text-align: right;
   
     /*@include mq($sm) {
         display: block;
