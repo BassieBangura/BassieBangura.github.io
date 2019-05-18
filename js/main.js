@@ -4,37 +4,34 @@
 ************************************************/
 const navItem = document.getElementById("main-nav-content");
 const hamburgerIcon = document.getElementById("hamburger-icon");
-const headerNavContainerForHamburgerMenuUse = document.querySelector('#header-nav-wrapper')
+let headerNavContainer = document.querySelector(".header-nav-container");
 let menuToggle = () => {
     //class determines position of hamburger menu icon
     if (navItem.className === "main-nav") {
         navItem.className += " responsive";
-        headerNavContainer.className += " display-column"
+        headerNavContainer.className += " display-column";
 
       } else {
         navItem.className = "main-nav";
-        headerNavContainer.className = "header-nav-container"
+        headerNavContainer.className = "header-nav-container";
       }
 };
 
 hamburgerIcon.addEventListener("click", () => {
-    console.log("hello")
-    menuToggle()
+    menuToggle();
     return false;
 });
 
 /***********************************************************;
  *        NAV HIGHLIGHT ON SCROLL;
- ************************************************************/;
+ ************************************************************/
 let mainNavLinks = document.querySelectorAll("nav a");
-let headerNavContainer = document.querySelector(".header-nav-container");
+
 
 //callback function
 const scrollSpyFunction = () => {
   let fromTop = window.scrollY;
   let headerOffHeight = headerNavContainer.offsetHeight;
-  console.log("the page has been scrolled")
-  console.log(mainNavLinks);
   mainNavLinks.forEach(link => {
     let section = document.querySelector(link.hash);
 
@@ -48,7 +45,7 @@ const scrollSpyFunction = () => {
       link.classList.remove("active");
     }
   });
-}
+};
 
 //throttle function for smooth scrolling
 const throttle = (fn, wait) => {
@@ -58,7 +55,7 @@ const throttle = (fn, wait) => {
       fn();
       time = Date.now();
     }
-  }
+  };
 };
 window.addEventListener("scroll", throttle(scrollSpyFunction, 1500) );
 
