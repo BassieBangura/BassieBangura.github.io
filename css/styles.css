@@ -500,6 +500,7 @@ header {
   border-radius: 50%;
   background-color: rgba(0, 0, 0, 0.05);
   padding: 0.1em;
+  font-size: 0.65em;
 }
 
 /***************************************
@@ -523,7 +524,7 @@ header {
   position: relative;
   /* Set a specific height */
   height: 100vh;
-  max-width: 100%;
+  width: 100vw;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
