@@ -19,7 +19,6 @@ nav[role="navigation"] {
 }
 
 a:link {
-    color: #0D6599;
     text-decoration: none;
 }
 
@@ -33,3 +32,7 @@ a:link {
     padding: 1em 1.2em;
 }
 
+.active {
+    background-color: #0D6599;
+    color: white;
+  }
