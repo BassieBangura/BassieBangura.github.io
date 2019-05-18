@@ -107,7 +107,7 @@ ul.skills__container {
 .skills__container {
   width: 100%;
   @include flexible($justify-content: center,
-                      $align-items: space-around,
+                      $align-content: space-around,
                       $wrap: wrap);
   @include centerer;
   padding: 6em;
@@ -190,6 +190,8 @@ ul.skills__container {
 .odd {
   background-image: url("../images/blue-bg.png");
   color: white;
+}
+.reverse-items {
   @include mq($md) {
     flex-direction: row-reverse;
   } 
@@ -228,7 +230,7 @@ div.first {
   }
 }
 
-.projects__card__link-container button {
+.projects__card__link-container p {
   border-radius: 0.25em;
   padding: 0.45em 0.75em 0.45em 0.75em;
   border: none;
@@ -239,19 +241,17 @@ div.first {
   
 }
 
-.projects__card__link-container button a {
+.projects__card__link-container a {
   color: #fff;
 }
 
-.projects__card__link-container button:hover {
+.projects__card__link-container a p:hover {
   border: solid 1px #aaa;
   color: white;
   background-color: #3385C6;
 }
 
-.projects__card__link-container button a:hover {
-  color: #0F263D;
-}
+
 
 /****************************************
             SKILLS
@@ -301,9 +301,21 @@ div.first {
   padding-bottom: 0.8em;
 }
 .contact__email {
+  width: 40%;
+  max-width: 200px;
   @include centerer;
+  background-color: #3385C6;
+  color:#043E62;
+  border-radius: 4px;
+  padding: 0.5em;
+  border: none;
 }
 
+.contact__email:hover {
+    border: 1px solid #043E6C;
+    color: white;
+   
+}
 .social-media {
   font-size: 1.2em;
   @include flexible($justify-content: center);

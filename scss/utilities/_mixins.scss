@@ -5,14 +5,15 @@
     $direction: null,
     $wrap: null,
     $justify-content: flex-start,
-    $align-items: flex-start)
+    $align-items: flex-start,
+    $align-content: flex-start)
     //null prevents unwanted css output
     {
         display: $display;
         flex-direction: $direction;
         flex-wrap: $wrap;
         justify-content: $justify-content;
-        align-items: $align-items;
+        align-content: $align-items;
         @content;
     };
 
