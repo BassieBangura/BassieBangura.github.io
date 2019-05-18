@@ -17,28 +17,17 @@ hamburgerIcon.addEventListener("click", () => {
     console.log("hello")
     menuToggle()
     return false;
-})
+});
 
-/***********************************************************
- *        NAV HIGHLIGHT ON SCROLL
- ************************************************************/
+/***********************************************************;
+ *        NAV HIGHLIGHT ON SCROLL;
+ ************************************************************/;
 let mainNavLinks = document.querySelectorAll("nav a");
-let mainSections = document.querySelectorAll("main section");
-let headerNavContainer = document.querySelector(".header-nav-container")
+let headerNavContainer = document.querySelector(".header-nav-container");
 
-
-// This should probably be throttled.
-// Especially because it triggers during smooth scrolling.
-// https://lodash.com/docs/4.17.10#throttle
-// You could do like...
-// window.addEventListener("scroll", () => {
-//    _.throttle(doThatStuff, 100);
-// });
-// Only not doing it here to keep this Pen dependency-free.
-
+//callback function
 const scrollSpyFunction = () => {
   let fromTop = window.scrollY;
-  let headerNavContainer = document.querySelector(".header-nav-container")
   let headerOffHeight = headerNavContainer.offsetHeight;
   console.log("the page has been scrolled")
   console.log(mainNavLinks);
@@ -57,6 +46,7 @@ const scrollSpyFunction = () => {
   });
 }
 
+//throttle function for smooth scrolling
 const throttle = (fn, wait) => {
   let time = Date.now();
   return () => {
@@ -65,7 +55,7 @@ const throttle = (fn, wait) => {
       time = Date.now();
     }
   }
-}
+};
 window.addEventListener("scroll", throttle(scrollSpyFunction, 1500) );
 
 
