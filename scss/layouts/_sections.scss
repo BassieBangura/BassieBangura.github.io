@@ -65,7 +65,7 @@
   text-align: center;
   padding: 1.5em 1.8em;
   color: #043E62;
-  background-color: #ccc;//#73B5F2;
+  background-image:linear-gradient(#fff, #ccc);//#73B5F2;
 
   h2 {
     margin-top: 0;
@@ -188,7 +188,8 @@ ul.skills__container {
   }
 }
 .odd {
-  background-image: url("../images/blue-bg.png");
+  background-image:linear-gradient(to right, #3385C6, #0F3553) ;
+  //background-image: url("../images/blue-bg.png");
   color: white;
 }
 .reverse-items {
