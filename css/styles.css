@@ -684,7 +684,8 @@ ul.skills__container {
 *********************************/
 .projects {
   text-align: center;
-  margin-top: 1.8em;
+  margin-top: 3em;
+  margin-bottom: 3em;
 }
 
 .projects h2 {
@@ -842,6 +843,15 @@ div.first {
   color: #043E62;
   margin: auto;
   text-align: center;
+}
+
+.skills__heading,
+.about__heading {
+  border-bottom: 1px solid #043E62;
+  width: 40%;
+  margin: auto;
+  text-align: center;
+  padding: 0.75em;
 }
 
 /***************************************
