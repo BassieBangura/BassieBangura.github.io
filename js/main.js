@@ -36,7 +36,7 @@ let headerNavContainer = document.querySelector(".header-nav-container")
 // });
 // Only not doing it here to keep this Pen dependency-free.
 
-window.addEventListener("scroll", event => {
+const scrollSpyFunction = () => {
   let fromTop = window.scrollY;
   let headerNavContainer = document.querySelector(".header-nav-container")
   let headerOffHeight = headerNavContainer.offsetHeight;
@@ -55,7 +55,18 @@ window.addEventListener("scroll", event => {
       link.classList.remove("active");
     }
   });
-});
+}
+
+const throttle = (fn, wait) => {
+  let time = Date.now();
+  return () => {
+    if ((time + wait - Date.now()) < 0) {
+      fn();
+      time = Date.now();
+    }
+  }
+}
+window.addEventListener("scroll", throttle(scrollSpyFunction, 1500) );
 
 
 

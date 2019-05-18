@@ -473,7 +473,7 @@ body {
 
 @media (min-width: 992px) {
   main {
-    max-width: 1024px;
+    max-width: 1900px;
     margin: auto;
   }
 }
@@ -684,6 +684,7 @@ ul.skills__container {
 *********************************/
 .projects {
   text-align: center;
+  margin-top: 1.8em;
 }
 
 .projects h2 {

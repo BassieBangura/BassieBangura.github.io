@@ -30,7 +30,7 @@ body {
  
 main {
    @include mq($lg) {
-    max-width: 1024px;
+    max-width: 1900px;
     margin: auto;
    }
    
