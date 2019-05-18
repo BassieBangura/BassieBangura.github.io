@@ -234,7 +234,8 @@ div.first {
   border-radius: 0.25em;
   padding: 0.45em 0.75em 0.45em 0.75em;
   border: none;
-  background-color: #024B77;
+  background-color: #73B5F2;
+  color: white;
   @include mq($md) {
     margin-left: 0.5em;
   }
