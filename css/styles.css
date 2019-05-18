@@ -821,8 +821,7 @@ div.first {
 
 .projects__card__link-container a p:hover {
   border: solid 1px #aaa;
-  color: white;
-  background-color: #3385C6;
+  color: #043E62;
 }
 
 /****************************************
