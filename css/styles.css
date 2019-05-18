@@ -900,7 +900,6 @@ div.first {
 }
 
 .social-media {
-  font-size: 1.2em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -913,9 +912,8 @@ div.first {
   text-align: center;
 }
 
-.social-media i {
-  color: blue;
-  padding: 0.5em 0.8em;
+.social-media li {
+  padding: 0.8em;
 }
 
 /*** Flex layout for main-nav content ***/
@@ -1085,5 +1083,11 @@ a img {
 a img:hover {
   -webkit-transform: scale(1.09);
           transform: scale(1.09);
+}
+
+.svg-icon {
+  width: 1.7em;
+  height: 1.7em;
+  fill: blue;
 }
 /*# sourceMappingURL=styles.css.map */

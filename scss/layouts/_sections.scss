@@ -323,12 +323,12 @@ div.first {
    
 }
 .social-media {
-  font-size: 1.2em;
   @include flexible($justify-content: center);
   @include centerer;
-
-  i {
-    color: blue;
-    padding: 0.5em 0.8em;
-  }
 }
+
+.social-media li {
+  padding: 0.8em;
+}
+
+
