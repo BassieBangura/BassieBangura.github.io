@@ -189,10 +189,11 @@ ul.skills__container {
 }
 .odd {
   color: white;
+  background-image:linear-gradient(#0F3553, #3385C6);
   @include mq($md) {
     background-image:linear-gradient(to right, #3385C6, #0F3553);
   }
-  background-image:linear-gradient(#0F3553, #3385C6);
+ 
   //background-image: url("../images/blue-bg.png");
  
 }
