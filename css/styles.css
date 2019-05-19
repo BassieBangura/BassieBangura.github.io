@@ -567,7 +567,7 @@ header {
           justify-content: flex-start;
   -ms-flex-line-pack: start;
       align-content: flex-start;
-  background-image: url("../images/jimage2b.png");
+  background-image: url("../images/jimage2.jpg");
   color: #fff;
   position: relative;
   /* Set a specific height */
@@ -672,7 +672,7 @@ header {
 .parallax1,
 .parallax2,
 .parallax3 {
-  background-image: url("../images/parallax-small1.png");
+  background-image: url("../images/parallax-small.jpg");
   /* Set a specific height */
   min-height: 300px;
   /* Create the parallax scrolling effect */
